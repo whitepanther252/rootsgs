@@ -55,8 +55,8 @@
 
                     <button type="submit" class="contact-form-btn" id = 'submit'>
 
-                        <a href = 'payment.html' style = "cursor: pointer; text-decoration: none; color: white;">
-                            
+                        <a href = 'thankyou.html' style = 'color: white; text-decoration: none;'>
+                    
                             Submit
         
                         </a>
@@ -66,12 +66,12 @@
 
                             // Your web app's Firebase configuration
                             const firebaseConfig = {
-                                apiKey: "AIzaSyC1MVfCxQU5fML2Zz7wuQm_NHROFkEN2-0",
-                                                  authDomain: "contact-19dbe.firebaseapp.com",
-                                                  projectId: "contact-19dbe",
-                                                  storageBucket: "contact-19dbe.appspot.com",
-                                                  messagingSenderId: "231592050833",
-                                                  appId: "1:231592050833:web:16da2106600d5f4756bf30"
+                                apiKey: "AIzaSyCLnTkiP9kMSPy4IqOiQqio24KSmgzW2iA",
+                                authDomain: "address-fba47.firebaseapp.com",
+                                projectId: "address-fba47",
+                                storageBucket: "address-fba47.appspot.com",
+                                messagingSenderId: "1006148996771",
+                                appId: "1:1006148996771:web:55eead7519849c58a8f916"
 
                             };
 
@@ -80,7 +80,7 @@
                             const db = getDatabase(app);
 
                             document.getElementById("addressform").addEventListener("click", function (e) {
-                                set(ref(db, 'Contact/' + document.getElementById("name").value), {
+                                set(ref(db, 'address/' + document.getElementById("name").value), {
                                     name: document.getElementById("name").value,
                                     address1: document.getElementById("address1").value,
                                     email: document.getElementById("email1").value,
