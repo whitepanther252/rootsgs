@@ -35,7 +35,7 @@
 
             <div class="contact-form">
 
-                <h1 align = 'center'>
+                <h1 text-align="center" >
                     
                     Details For Delivery
                 
@@ -43,23 +43,15 @@
 
                 <div id="error_message"></div>
 
-                <form class = 'address_form' onsubmit="return validate_form();">
+                <form class = 'address_form' onsubmit="return validate_form() id='addressform';">
 
                     <input type="text" placeholder="Name" class="contact-form-txt" id = 'name' required/>
 
-                    <input type="text" placeholder="Address" class="contact-form-txt" id = 'address' required/>
+                    <input type="text" placeholder="Address" class="contact-form-txt" id = 'address1' required/>
 
-                    <input type="text" placeholder="Email-ID" class="contact-form-txt" id = 'email' required/>
-
-                    <input type="text" placeholder="Locality/Apartment" class="contact-form-txt" required/>
-
-                    <input type="text" placeholder="Pincode" class="contact-form-txt" id = 'pincode' required/>
+                    <input type="text" placeholder="Email-ID" class="contact-form-txt" id = 'email1' required/>
 
                     <input type="text" placeholder="Contact No." class="contact-form-txt" id = 'phone' required/>
-
-                    <input type="text" placeholder="Date (Format: dd/mm/yyyy)" class="contact-form-txt" id = 'date' required/>
-
-                    <input type="text" placeholder="Time Slot (Format: Starting Time - Ending Time. Give a duration of 2 hours.)" class="contact-form-txt" id = 'time' required/>
 
                     <button type="submit" class="contact-form-btn" id = 'submit'>
 
@@ -68,8 +60,37 @@
                             Submit
         
                         </a>
+                        <script type="module">
+                            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+                            import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+
+                            // Your web app's Firebase configuration
+                            const firebaseConfig = {
+                                apiKey: "AIzaSyC1MVfCxQU5fML2Zz7wuQm_NHROFkEN2-0",
+                                                  authDomain: "contact-19dbe.firebaseapp.com",
+                                                  projectId: "contact-19dbe",
+                                                  storageBucket: "contact-19dbe.appspot.com",
+                                                  messagingSenderId: "231592050833",
+                                                  appId: "1:231592050833:web:16da2106600d5f4756bf30"
+
+                            };
+
+                            // Initialize Firebase
+                            const app = initializeApp(firebaseConfig);
+                            const db = getDatabase(app);
+
+                            document.getElementById("addressform").addEventListener("click", function (e) {
+                                set(ref(db, 'Contact/' + document.getElementById("name").value), {
+                                    name: document.getElementById("name").value,
+                                    address1: document.getElementById("address1").value,
+                                    email: document.getElementById("email1").value,
+                                    phone: document.getElementById("phone").value,
+                                });
+                            });
+                        </script>
                     
                     </button>
+                    
                 </form>
 
             </div>
