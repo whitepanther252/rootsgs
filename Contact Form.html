@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Roots Grocery Store</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="Home Page.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+
+    
+
+
+    <style>
+               
+* {
+	margin:0px;
+	padding:0px;
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+
+body {
+	background: #ffffff;
+	color: #333;
+	font-weight: normal;
+	font-size: 1em;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+	outline: none;
+}
+::-moz-placeholder {
+	color: #666;
+	font-weight: 300;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #666;
+	font-weight: 300;
+}
+
+
+/* Contact Form Styling */
+.container {
+	padding: 0 50px 70px;
+}
+.textcenter {
+	text-align: center;
+}
+.section1 {
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.section1 .shtext {
+	display: block;
+	margin-top: 20px;
+}
+.section1 .seperator {
+	border-bottom:1px solid #a2a2a2;
+	width: 35px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.section1 h1 {
+	font-size: 40px;
+	color: #A44DD8;
+	font-weight: normal;
+}
+
+.section2 {
+    width: 1200px;
+    margin: 25px auto;
+}
+.section2 .col2 {
+	width: 48.71%;
+}
+.section2 .col2.first {
+	float: left;
+}
+.section2 .col2.last {
+	float: right;
+}
+.section2 .col2.column2 {
+	padding: 0 30px;
+}
+.section2 span.collig {
+	color: #a2a2a2;
+	margin-right: 10px;
+	display: inline-block;
+}
+.section2 .sec2addr {
+	display: block;
+	line-height: 26px;
+}
+.section2 .sec2addr p:first-child {
+	margin-bottom: 10px;
+}
+.section2 .sec2contactform input[type="text"], 
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+    padding: 18px;
+    border: 0;
+    background: #EDEDED;
+    margin: 7px 0;
+}
+.section2 .sec2contactform textarea {
+	width: 100%;
+	display: block;
+	color: #666;
+  resize:none;
+}
+.section2 .sec2contactform input[type="submit"] {
+	padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #A44DD8;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.section2 .sec2contactform h3 {
+	font-weight: normal;
+    margin: 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 19px;
+    color: #A44DD8;
+}
+
+/* @media querries */
+
+@media only screen and (max-width: 1266px) {
+	.section2 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.container {
+		padding: 0 30px 70px;
+	}
+	.section2 .col2 {
+		width: 100%;
+		display: block;
+	}
+	.section2 .col2.first {
+		margin-bottom: 10px;
+	}
+	.section2 .col2.column2 {
+		padding: 0;
+	}
+	body .sec2map {
+		height: 250px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section2 .sec2addr {
+		font-size: 14px;
+	}
+	.section2 .sec2contactform h3 {
+		font-size: 16px;
+	}
+	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+		padding: 10px;
+		margin:3px 0;
+	}
+	.section2 .sec2contactform input[type="submit"] {
+		padding: 10px 30px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.section1 h1 {
+		font-size: 28px;
+	}	
+}
+
+
+
+    </style>
+</head>
+
+<body>
+     <!--==Navigation================================-->
+     <nav class="navigation">
+    
+        <!--logo-------->
+        <a href="#" class="logo">
+
+            <span>R</span>OOTS
+
+        </a>
+
+        <!--menu-btn---->
+        
+
+        <label for="menu-btn" class="menu-icon">
+
+            <span class="nav-icon"></span>
+
+        </label>
+
+        <!--menu-------->
+      
+        <ul class="menu">
+
+            <li>
+                <a href="Home Page.html" class="active">
+                    
+                    Home
+
+                </a>
+            
+            </li>
+
+            <li>
+
+                <a href="category.html">
+
+                    Categories
+                
+                </a>
+            
+            </li>
+
+            <li>
+
+                <a href="package.html">
+                    
+                    Packages
+                
+                </a>
+            
+            </li>
+
+            <li>
+                
+                <a href="Contact Form.html">
+                    
+                    Contact&nbsp;Us
+                
+                </a>
+            
+            </li>
+            
+            <li>
+                
+                <a href="Feedback Form.html">
+                    
+                    Feedback
+                
+                </a>
+            
+            </li>
+            
+            <li>
+
+                <a href="About Us.html">
+
+                    About&nbsp;us
+
+                </a>
+
+            </li>
+
+            <li>
+                
+                <a href="app.html">
+                    
+                    App
+                
+                </a>
+            
+            </li>
+
+            
+
+            </ul>
+            </nav>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="innerwrap">
+            <!-- Section 1 -->
+            <section class="section1 clearfix">
+                <div class="textcenter">
+                    <h2>Contact Us</h2>
+                    <h1 style="color: #40aa54;">Drop Us a Mail</h1>
+                </div>
+            </section>
+            <!-- Section 2 -->
+            <section class="section2 clearfix">
+                <div class="col2 column1 first">
+                    <iframe id="map-canvas" class="map_part" width="600"  height="450"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=tiruchengode,tamilnadu&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">Powered by <a href="https://embedgooglemaps.com">html embed google maps</a> and <a href="https://xn--sms-ln-direkt-utbetalning-gfc.se/">smslån direkt utbetalning</a></iframe>
+                </div>
+                <div class="col2 column2 last">
+                    <div class="sec2innercont">
+                        <div class="sec2addr">
+                            <p><span class="collig">Phone :</span> +91 976885083</p>
+                            <p><span class="collig">Email :</span> rootsgrocery@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="sec2contactform">
+                        <h3 style="color: #40aa54;">Want to Know More?? Drop Us a Mail</h3>
+                        <!-- Your form here -->
+                        <form action="" id="contactform">
+                            <!-- Your form elements here -->
+                            <div class="clearfix">
+                                <input class="col2 first" type="text" placeholder="FirstName" id="fname">
+                                <input class="col2 last" type="text" placeholder="LastName" id="lname">
+                            </div>
+                            <div class="clearfix">
+                                <input class="col2 first" type="email" placeholder="Email" id="email">
+                                <input class="col2 last" type="text" placeholder="Contact Number" id="contact">
+                            </div>
+                            <div class="clearfix">
+                                <textarea name="textarea" id="message" cols="30" rows="7">Your message here...</textarea>
+                            </div>
+                            <div class="clearfix"><input type="submit" value="Send" style="background-color: #40aa54" id="submit"></div>
+                        </form>
+                        <!-- Firebase Script -->
+
+                        <script type="module">
+                            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+                            import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+
+                            // Your web app's Firebase configuration
+                            const firebaseConfig = {
+                                apiKey: "AIzaSyC1MVfCxQU5fML2Zz7wuQm_NHROFkEN2-0",
+                                                  authDomain: "contact-19dbe.firebaseapp.com",
+                                                  projectId: "contact-19dbe",
+                                                  storageBucket: "contact-19dbe.appspot.com",
+                                                  messagingSenderId: "231592050833",
+                                                  appId: "1:231592050833:web:16da2106600d5f4756bf30"
+
+                            };
+
+                            // Initialize Firebase
+                            const app = initializeApp(firebaseConfig);
+                            const db = getDatabase(app);
+
+                            document.getElementById("contactform").addEventListener("click", function (e) {
+                                set(ref(db, 'Contact/' + document.getElementById("fname").value), {
+                                    fname: document.getElementById("fname").value,
+                                    lname: document.getElementById("lname").value,
+                                    email: document.getElementById("email").value,
+                                    contact: document.getElementById("contact").value,
+                                    message: document.getElementById("message").value,
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div><br><br><br><br><br>
+    <footer>
+        <div class="footer-container">
+            <!--logo-container------>
+            <div class="footer-logo">
+                <a href="file:///C:/Users/RAGHAV/Desktop/Coding/Grocery/Logo.png"><span>R</span>OOTS</a>
+                <!--social----->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" style="color: green;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <!--links------------------------->
+        <div class="footer-links">
+            <strong>Product</strong>
+            <ul>
+                <li><a href="#">Grocery</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">New</a></li>
+            </ul>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+            <strong>Category</strong>
+            <ul>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Vegetables</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Medicine</a></li>
+            </ul>
+        </div>
+        <!--links-------------------------->
+        <div class="footer-links">
+            <strong>Contact</strong>
+            <ul>
+                <li><a href="#">Phone : 976885083</a></li>
+                <li><a href="#">Email : rootsgrocery@gmail.com</a></li>
+             
+            </ul>
+            <br><p style="color: aliceblue;">Copyright ©2023 Roots | All Rights Reserved</p>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

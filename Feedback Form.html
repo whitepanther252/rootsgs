@@ -1,0 +1,352 @@
+<DOCTYPE html>
+
+    <html>
+    
+        <head>
+    
+        <meta charset="utf-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--==Title==================================-->
+        <title>
+    
+           Roots Grocery Store
+    
+        </title>
+    
+        <!--==Stylesheet=============================-->
+        <link rel="stylesheet" type="text/css" href="Home Page.css">
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+    
+        <!--==Fav-icon===============================-->
+       
+        <!--==Using-Font-Awesome=====================-->
+       
+    
+       
+            
+    <style>
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+
+
+body {
+  background: #f2f6ff;
+}
+
+.container {
+  background: #f8faff;
+  color: #4b537c;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: #dee8fe 0 10px 20px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heading {
+  font-size: 18px;
+}
+
+.para {
+  font-weight: 600;
+}
+
+.feedback-level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.level {
+  background: white;
+  padding: 13px;
+  border-radius: 7px;
+  border: solid 0.5px #e0e9fe;
+  cursor: pointer;
+}
+.level:hover {
+  box-shadow: #40aa54 0 2px 5px;
+}
+.level:hover i {
+  color: #40aa54;
+}
+.level i {
+  font-size: 40px;
+}
+
+.feedback-msg textarea {
+  margin-top: 5px;
+  border: solid 2px #e0e9fe;
+  padding: 13px;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  color: #4b537c;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 80px;
+  resize: none;
+}
+
+.agreement .checkbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.agreement input {
+  accent-color: #40aa54;
+}
+.agreement a {
+  color: #40aa54;
+  font-size: 12px;
+  font-weight: 600;
+}
+.agreement label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+.buttons a {
+  background: white;
+  color: #4b537c;
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+.buttons a:hover {
+  opacity: 0.9;
+}
+.buttons a:nth-child(1) {
+  background: #40aa54;
+  color: #f8faff;
+}
+
+
+    </style>
+        </head>
+    
+        <body>
+    
+            <!--==Navigation================================-->
+            <nav class="navigation">
+    
+                <!--logo-------->
+                <a href="#" class="logo">
+    
+                    <span>R</span>OOTS
+    
+                </a>
+    
+                <!--menu-btn---->
+                <input type="checkbox" class="menu-btn" id="menu-btn">
+    
+                <label for="menu-btn" class="menu-icon">
+    
+                    <span class="nav-icon"></span>
+    
+                </label>
+    
+                <!--menu-------->
+              
+                <ul class="menu">
+    
+                    <li>
+                        <a href="Home Page.html" class="active">
+                            
+                            Home
+    
+                        </a>
+                    
+                    </li>
+    
+                    <li>
+    
+                        <a href="category.html">
+    
+                            Categories
+                        
+                        </a>
+                    
+                    </li>
+    
+                    <li>
+    
+                        <a href="package.html">
+                            
+                            Packages
+                        
+                        </a>
+                    
+                    </li>
+    
+                    <li>
+                        
+                        <a href="Contact Form.html">
+                            
+                            Contact&nbsp;Us
+                        
+                        </a>
+                    
+                    </li>
+                    
+                    <li>
+                        
+                        <a href="Feedback Form.html">
+                            
+                            Feedback
+                        
+                        </a>
+                    
+                    </li>
+                    
+                    <li>
+    
+                        <a href="About Us.html">
+    
+                            About&nbsp;us
+    
+                        </a>
+    
+                    </li>
+    
+                    <li>
+                        
+                        <a href="app.html">
+                            
+                            App
+                        
+                        </a>
+                    
+                    </li>
+    
+                    
+    
+                    </ul>
+                    </nav>
+                    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+<form class="container">
+  <h1 class="heading">Give feedback</h1>
+  <p class="para">What do you think of the issue search experience within the project?</p>
+
+  <div class="feedback-level">
+    <div class="level">
+      <i class="lar la-sad-tear"></i>
+    </div>
+    <div class="level">
+      <i class="las la-frown"></i>
+    </div>
+    <div class="level">
+      <i class="lar la-meh"></i>
+    </div>
+    <div class="level">
+      <i class="lar la-smile"></i>
+    </div>
+    <div class="level">
+      <i class="lar la-grin"></i>
+    </div>
+  </div>
+
+  <div class="feedback-msg">
+    <p class="para" id="message"> 
+      What are the main reasons for your rating?
+    </p>
+    <textarea name="" id=""></textarea>
+  </div>
+
+  <div class="agreement">
+    <div class="checkbox">
+      <input type="checkbox" name="" id="">
+      <label for="">I may be contacted about this feedback <a href="#">Privacy Policy</a>.</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" name="" id="">
+      <label for="">I would like to subscribe to the store's newsletter for <a href="#">Updates and promotions.</a>.</label>
+    </div>
+    <div class="buttons">
+        <!-- Call the respective functions on click -->
+        <a href="javascript:showThankYouMessage()" id="submit">Submit</a>
+        <a href="javascript:showCancellationMessage()">Cancel</a>
+
+        
+
+        
+    </div>
+  </div>
+  <script>
+    function showThankYouMessage() {
+      alert("Thank you for your feedback!");
+      // Add any additional logic or redirection here if needed
+    }
+
+    function showCancellationMessage() {
+      alert("Feedback submission canceled.");
+      // Add any additional logic or redirection here if needed
+    }
+  </script>
+
+  
+</form><br><br><br><br><br>
+<footer>
+    <div class="footer-container">
+        <!--logo-container------>
+        <div class="footer-logo">
+            <a href="file:///C:/Users/RAGHAV/Desktop/Coding/Grocery/Logo.png"><span>R</span>OOTS</a>
+            <!--social----->
+            <div class="footer-social">
+                <a href="https://www.facebook.com/" style="color: green;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!--links------------------------->
+    <div class="footer-links">
+        <strong>Product</strong>
+        <ul>
+            <li><a href="#">Grocery</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">New</a></li>
+        </ul>
+    </div>
+    <!--links------------------------->
+    <div class="footer-links">
+        <strong>Category</strong>
+        <ul>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Baby</a></li>
+            <li><a href="#">Medicine</a></li>
+        </ul>
+    </div>
+    <!--links-------------------------->
+    <div class="footer-links">
+        <strong>Contact</strong>
+        <ul>
+            <li><a href="#">Phone : 976885083</a></li>
+            <li><a href="#">Email : rootsgrocery@gmail.com</a></li>
+         
+        </ul>
+        <br><p style="color: aliceblue;">Copyright ©2023 Roots | All Rights Reserved</p>
+    </div>
+    </div>
+</footer>
+                    </body>
